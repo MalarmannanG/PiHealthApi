@@ -1,0 +1,370 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth\\PiHealth.csproj": {}
+  },
+  "projects": {
+    "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Core\\PiHealth.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Core\\PiHealth.Core.csproj",
+        "projectName": "PiHealth.Core",
+        "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Core\\PiHealth.Core.csproj",
+        "packagesPath": "C:\\Users\\malar\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.DataModel\\PiHealth.DataModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.DataModel\\PiHealth.DataModel.csproj",
+        "projectName": "PiHealth.DataModel",
+        "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.DataModel\\PiHealth.DataModel.csproj",
+        "packagesPath": "C:\\Users\\malar\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.DataModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Core\\PiHealth.Core.csproj": {
+                "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Core\\PiHealth.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Services\\PiHealth.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Services\\PiHealth.Services.csproj",
+        "projectName": "PiHealth.Services",
+        "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Services\\PiHealth.Services.csproj",
+        "packagesPath": "C:\\Users\\malar\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.DataModel\\PiHealth.DataModel.csproj": {
+                "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.DataModel\\PiHealth.DataModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.2.7, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.WebInfra\\PiHealth.WebInfra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.WebInfra\\PiHealth.WebInfra.csproj",
+        "projectName": "PiHealth.WebInfra",
+        "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.WebInfra\\PiHealth.WebInfra.csproj",
+        "packagesPath": "C:\\Users\\malar\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.WebInfra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth\\PiHealth.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth\\PiHealth.csproj",
+        "projectName": "PiHealth",
+        "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth\\PiHealth.csproj",
+        "packagesPath": "C:\\Users\\malar\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Core\\PiHealth.Core.csproj": {
+                "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Core\\PiHealth.Core.csproj"
+              },
+              "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.DataModel\\PiHealth.DataModel.csproj": {
+                "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.DataModel\\PiHealth.DataModel.csproj"
+              },
+              "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Services\\PiHealth.Services.csproj": {
+                "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.Services\\PiHealth.Services.csproj"
+              },
+              "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.WebInfra\\PiHealth.WebInfra.csproj": {
+                "projectPath": "D:\\source\\repos\\PiHealth\\aspnet-core\\PiHealth.WebInfra\\PiHealth.WebInfra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.2.7, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

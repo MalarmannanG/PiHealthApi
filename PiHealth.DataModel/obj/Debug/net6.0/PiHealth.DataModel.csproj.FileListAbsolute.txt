@@ -1,0 +1,15 @@
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\bin\Debug\net6.0\PiHealth.DataModel.deps.json
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\bin\Debug\net6.0\PiHealth.DataModel.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\bin\Debug\net6.0\ref\PiHealth.DataModel.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\bin\Debug\net6.0\PiHealth.DataModel.pdb
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\bin\Debug\net6.0\PiHealth.Core.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\bin\Debug\net6.0\PiHealth.Core.pdb
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\obj\Debug\net6.0\PiHealth.DataModel.csproj.AssemblyReference.cache
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\obj\Debug\net6.0\PiHealth.DataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\obj\Debug\net6.0\PiHealth.DataModel.AssemblyInfoInputs.cache
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\obj\Debug\net6.0\PiHealth.DataModel.AssemblyInfo.cs
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\obj\Debug\net6.0\PiHealth.DataModel.csproj.CoreCompileInputs.cache
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\obj\Debug\net6.0\PiHealth.DataModel.csproj.CopyComplete
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\obj\Debug\net6.0\PiHealth.DataModel.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\obj\Debug\net6.0\ref\PiHealth.DataModel.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth.DataModel\obj\Debug\net6.0\PiHealth.DataModel.pdb

@@ -1,0 +1,12 @@
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\bin\Debug\net6.0\PiHealth.WebInfra.deps.json
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\bin\Debug\net6.0\PiHealth.WebInfra.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\bin\Debug\net6.0\ref\PiHealth.WebInfra.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\bin\Debug\net6.0\PiHealth.WebInfra.pdb
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\obj\Debug\net6.0\PiHealth.WebInfra.csproj.AssemblyReference.cache
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\obj\Debug\net6.0\PiHealth.WebInfra.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\obj\Debug\net6.0\PiHealth.WebInfra.AssemblyInfoInputs.cache
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\obj\Debug\net6.0\PiHealth.WebInfra.AssemblyInfo.cs
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\obj\Debug\net6.0\PiHealth.WebInfra.csproj.CoreCompileInputs.cache
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\obj\Debug\net6.0\PiHealth.WebInfra.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\obj\Debug\net6.0\ref\PiHealth.WebInfra.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth.WebInfra\obj\Debug\net6.0\PiHealth.WebInfra.pdb
