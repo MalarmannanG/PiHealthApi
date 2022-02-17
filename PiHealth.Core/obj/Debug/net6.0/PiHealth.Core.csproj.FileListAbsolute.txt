@@ -2,7 +2,6 @@ D:\source\repos\PiHealth\aspnet-core\PiHealth.Core\bin\Debug\net6.0\PiHealth.Cor
 D:\source\repos\PiHealth\aspnet-core\PiHealth.Core\bin\Debug\net6.0\PiHealth.Core.dll
 D:\source\repos\PiHealth\aspnet-core\PiHealth.Core\bin\Debug\net6.0\ref\PiHealth.Core.dll
 D:\source\repos\PiHealth\aspnet-core\PiHealth.Core\bin\Debug\net6.0\PiHealth.Core.pdb
-D:\source\repos\PiHealth\aspnet-core\PiHealth.Core\obj\Debug\net6.0\PiHealth.Core.csproj.AssemblyReference.cache
 D:\source\repos\PiHealth\aspnet-core\PiHealth.Core\obj\Debug\net6.0\PiHealth.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\source\repos\PiHealth\aspnet-core\PiHealth.Core\obj\Debug\net6.0\PiHealth.Core.AssemblyInfoInputs.cache
 D:\source\repos\PiHealth\aspnet-core\PiHealth.Core\obj\Debug\net6.0\PiHealth.Core.AssemblyInfo.cs

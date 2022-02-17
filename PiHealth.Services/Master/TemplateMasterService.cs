@@ -24,7 +24,8 @@ namespace PiHealth.Services.Master
 
             if (!string.IsNullOrEmpty(name))
             {
-                data = data.Where(a => a.Name.Contains(name));
+                //data = data.Where(a => a.Name.Contains(name));
+                data = data.WhereIf(!string.IsNullOrWhiteSpace(name), e => false || e.Name.Contains(name) || e.Compliants.Contains(name) || e.Examination.Contains(name) || e.Impression.Contains(name) || e.Advice.Contains(name) || e.Plan.Contains(name) || e.FollowUp.Contains(name));
             }
 
             return data;

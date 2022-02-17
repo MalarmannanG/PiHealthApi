@@ -109,7 +109,7 @@ namespace PiHealth.Services.PiHealthPatients
 
         public string NewULID()
         {
-            var id = (_repository.Table.LastOrDefault()?.Id ?? 0) + 1;
+            var id = (_repository.Table.ToList().LastOrDefault()?.Id ?? 0) + 1;
             var ulId = id.ToString("D7");
             return ulId;
         }

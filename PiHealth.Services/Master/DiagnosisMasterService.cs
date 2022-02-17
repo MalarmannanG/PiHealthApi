@@ -23,7 +23,8 @@ namespace PiHealth.Services.Master
 
             if (!string.IsNullOrEmpty(name))
             {
-                data = data.Where(a => a.Name.Contains(name));
+                //data = data.Where(a => a.Name.Contains(name));
+                data = data.WhereIf(!string.IsNullOrWhiteSpace(name), e => false || e.Name.Contains(name) || e.Description.Contains(name));
             }
 
             return data;

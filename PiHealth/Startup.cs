@@ -29,6 +29,7 @@ using PiHealth.Web.Model.Prefix;
 using PiHealth.WebInfra;
 using PiHealth.Extention;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json.Serialization;
 
 namespace PiHealth
 {
@@ -51,7 +52,12 @@ namespace PiHealth
             GlobalConfiguration.ContentRootPath = _webHostEnvironment.ContentRootPath;
 
             services.AddMemoryCache();
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(setup =>
+            {
+                setup.SerializerSettings.ContractResolver = new DefaultContractResolver();
+                setup.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                setup.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Local;
+            });
             services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
             services.AddScoped<IAppUserService, AppUserService>();
             services.AddScoped<ITokenStoreService, TokenStoreService>();
@@ -99,13 +105,15 @@ namespace PiHealth
                     });
             });
 
-            services.AddMvc(option => {
+            services.AddMvc(option =>
+            {
                 option.Filters.Add(typeof(ExceptionHandlingFilter)); // by type                
             })
                .AddJsonOptions(
            options => options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase
        );
 
+          
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PIHealth API", Version = "v1" });
@@ -115,7 +123,7 @@ namespace PiHealth
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-           
+
             app.UseSwagger();
 
             app.UseSwaggerUI(options =>
@@ -135,6 +143,7 @@ namespace PiHealth
             app.UseCors(MyAllowSpecificOrigins);
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
@@ -215,7 +224,7 @@ namespace PiHealth
             }
             app.UseMiddleware<ErrorHandlingMiddleware>();
             //app.UseCors("CorsPolicy");
-           
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

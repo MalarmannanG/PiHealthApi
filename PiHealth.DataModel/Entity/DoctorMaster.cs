@@ -28,7 +28,7 @@ namespace PiHealth.DataModel.Entity
         public DateTime? ModifiedDate { get; set; }
         public long CreatedBy { get; set; }
         public long? ModifiedBy { get; set; }
-
+        public long PinCode { get; set; }
         public virtual ICollection<Patient> Patients { get; set; }
     }
 

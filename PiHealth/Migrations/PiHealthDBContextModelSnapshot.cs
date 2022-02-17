@@ -330,12 +330,7 @@ namespace PiHealth.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long?>("PatientProfileId")
-                        .HasColumnType("bigint");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("PatientProfileId");
 
                     b.ToTable("DiagnosisMaster");
                 });
@@ -392,6 +387,9 @@ namespace PiHealth.Migrations
 
                     b.Property<string>("PhoneNo2")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("PinCode")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("Qualification")
                         .HasColumnType("nvarchar(max)");
@@ -732,16 +730,13 @@ namespace PiHealth.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("GenericName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("MedicinName")
+                    b.Property<string>("MedicineName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<long?>("ModifiedBy")
@@ -749,6 +744,9 @@ namespace PiHealth.Migrations
 
                     b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Strength")
                         .HasColumnType("nvarchar(max)");
@@ -828,13 +826,10 @@ namespace PiHealth.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("MedicinName")
+                    b.Property<string>("MedicineName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<long?>("ModifiedBy")
@@ -854,6 +849,9 @@ namespace PiHealth.Migrations
 
                     b.Property<bool>("Noon")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Strength")
                         .HasColumnType("nvarchar(max)");
@@ -1024,13 +1022,6 @@ namespace PiHealth.Migrations
                     b.HasOne("PiHealth.DataModel.Entity.Patient", "Patient")
                         .WithMany("Appointments")
                         .HasForeignKey("PatientId");
-                });
-
-            modelBuilder.Entity("PiHealth.DataModel.Entity.DiagnosisMaster", b =>
-                {
-                    b.HasOne("PiHealth.DataModel.Entity.PatientProfile", "PatientProfile")
-                        .WithMany()
-                        .HasForeignKey("PatientProfileId");
                 });
 
             modelBuilder.Entity("PiHealth.DataModel.Entity.Patient", b =>

@@ -117,6 +117,8 @@ namespace PiHealth.Web.Controllers.API
             user.SerialNumber = new Guid().ToString();
             user.CreatedDate = DateTime.UtcNow;
             user.Password = _securityService.GetSha256Hash(model.password);
+            user.Username = user.Email;
+            user.Name = user.Email;
             user = await _userService.Create(user);
             user.IsActive = true;
             _auditLogService.InsertLog(ControllerName: ControllerName, ActionName: ActionName, UserAgent: UserAgent, RequestIP: RequestIP, userid: ActiveUser.Id, value1: "Success", value2: "Create");

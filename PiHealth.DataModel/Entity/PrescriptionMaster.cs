@@ -13,10 +13,10 @@ namespace PiHealth.DataModel.Entity
 
         public string GenericName { get; set; }
         public string CategoryName { get; set; }
-        public string MedicinName { get; set; }
+        public string MedicineName { get; set; }
         public string Strength { get; set; }
         public string Units { get; set; }
-        public string Description { get; set; }
+        public string Remarks { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime? ModifiedDate { get; set; }
         public long CreatedBy { get; set; }

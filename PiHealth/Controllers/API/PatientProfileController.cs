@@ -98,6 +98,14 @@ namespace PiHealth.Web.Controllers.API
                     patientProfile = model.ToEntity(new PatientProfile());
                     patientProfile.CreatedDate = DateTime.Now;
                     patientProfile.CreatedBy = ActiveUser.Id;
+                    if (!model.appointment.isActive)
+                    {
+                        var _appoinment = await _appointmentService.Get(model.appointmentId);
+                        _appoinment.IsActive = false;
+                        _appoinment.UpdatedBy = ActiveUser.Id;
+                        _appoinment.UpdatedDate = DateTime.Now;
+                        await _appointmentService.Update(_appoinment);
+                    }
                     await _patientProfileService.Create(patientProfile);
                 }
                 else
@@ -107,6 +115,14 @@ namespace PiHealth.Web.Controllers.API
                     patientProfile.IsDeleted = model.isDeleted;
                     patientProfile.ModifiedDate = DateTime.Now;
                     patientProfile.ModifiedBy = ActiveUser.Id;
+                      if (!model.appointment.isActive)
+                    {
+                        var _appoinment = await _appointmentService.Get(model.appointmentId);
+                        _appoinment.IsActive = false;
+                        _appoinment.UpdatedBy = ActiveUser.Id;
+                        _appoinment.UpdatedDate = DateTime.Now;
+                        await _appointmentService.Update(_appoinment);
+                    }
                     await _patientProfileService.Update(patientProfile);
                     _auditLogService.InsertLog(ControllerName: ControllerName, ActionName: ActionName, UserAgent: UserAgent, RequestIP: RequestIP, userid: ActiveUser.Id, value1: "Success");
 

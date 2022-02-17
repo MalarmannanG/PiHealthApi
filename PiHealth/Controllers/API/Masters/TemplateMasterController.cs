@@ -69,7 +69,7 @@ namespace PiHealth.Web.Controllers.API.Masters
             await _templateMasterService.Create(templateMaster);
             _auditLogService.InsertLog(ControllerName: ControllerName, ActionName: ActionName, UserAgent: UserAgent, RequestIP: RequestIP, userid: ActiveUser.Id, value1: "Success");
 
-            return Ok(templateMaster);
+            return Ok(templateMaster.Id);
         }
 
         [HttpPut]

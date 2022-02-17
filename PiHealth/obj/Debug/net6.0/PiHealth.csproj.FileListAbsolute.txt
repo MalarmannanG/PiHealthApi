@@ -68,3 +68,6 @@ D:\source\repos\PiHealth\aspnet-core\PiHealth\obj\Debug\net6.0\PiHealth.dll
 D:\source\repos\PiHealth\aspnet-core\PiHealth\obj\Debug\net6.0\ref\PiHealth.dll
 D:\source\repos\PiHealth\aspnet-core\PiHealth\obj\Debug\net6.0\PiHealth.pdb
 D:\source\repos\PiHealth\aspnet-core\PiHealth\obj\Debug\net6.0\PiHealth.genruntimeconfig.cache
+D:\source\repos\PiHealth\aspnet-core\PiHealth\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\source\repos\PiHealth\aspnet-core\PiHealth\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

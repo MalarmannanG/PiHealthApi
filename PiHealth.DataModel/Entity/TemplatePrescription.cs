@@ -12,13 +12,13 @@ namespace PiHealth.DataModel.Entity
         }
 
         public long TemplateMasterId { get; set; }
-        public string MedicinName { get; set; }
+        public string MedicineName { get; set; }
         public string Strength { get; set; }
         public bool BeforeFood { get; set; }
         public bool Morning { get; set; }
         public bool Noon { get; set; }
         public bool Night { get; set; }
-        public string Description { get; set; }
+        public string Remarks { get; set; }
         public int NoOfDays { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime? ModifiedDate { get; set; }

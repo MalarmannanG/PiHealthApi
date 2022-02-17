@@ -50,4 +50,9 @@ namespace PiHealth.Web.Model.VitalsReport
         public string base64String { get; set; }
     }
 
+    public class GetFileInput
+    {
+        public string fileName { get; set; }
+        public string filePath { get; set; }
+    }
 }

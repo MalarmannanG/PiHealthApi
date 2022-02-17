@@ -11,12 +11,12 @@ namespace PiHealth.Web.MappingExtention
     {
         public static PrescriptionMasterModel ToModel(this PrescriptionMaster entity, PrescriptionMasterModel model)
         {
-            model.medicinName = entity.MedicinName;
+            model.medicineName = entity.MedicineName;
             model.genericName = entity.GenericName;
             model.categoryName = entity.CategoryName;
             model.strength = entity.Strength;
             model.units = entity.Units;
-            model.description = entity.Description;
+            model.remarks = entity.Remarks;
             model.isDeleted = entity.IsDeleted;
             model.id = entity.Id;
             model.createdBy = entity.CreatedBy;
@@ -28,12 +28,12 @@ namespace PiHealth.Web.MappingExtention
 
         public static PrescriptionMaster ToEntity(this PrescriptionMasterModel model, PrescriptionMaster entity)
         {
-            entity.MedicinName = model.medicinName;
+            entity.MedicineName = model.medicineName;
             entity.GenericName = model.genericName;
             entity.CategoryName = model.categoryName;
             entity.Strength = model.strength;
             entity.Units = model.units;
-            entity.Description = model.description;
+            entity.Remarks = model.remarks;
             entity.Id = model.id;
             entity.IsDeleted = model.isDeleted;
             entity.CreatedBy =model.createdBy;

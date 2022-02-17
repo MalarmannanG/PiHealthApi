@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PiHealth.Services;
 
 namespace PiHealth.Services.Master
 {   
@@ -23,7 +24,8 @@ namespace PiHealth.Services.Master
 
             if (!string.IsNullOrEmpty(name))
             {
-                data = data.Where(a => a.Name.Contains(name));
+                //data = data.Where(a => a.Name.Contains(name));
+                data = data.WhereIf(!string.IsNullOrWhiteSpace(name), e => false || e.Name.Contains(name) || e.ClinicName.Contains(name) || e.PhoneNo1.Contains(name) || e.Email.Contains(name) || e.PinCode.ToString().Contains(name));
             }
 
             return data;

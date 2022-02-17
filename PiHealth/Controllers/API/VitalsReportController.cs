@@ -14,6 +14,10 @@ using PiHealth.Web.Helper;
 using PiHealth.Web.MappingExtention;
 using PiHealth.Web.Model.VitalsReport;
 using PiHealth.Controllers;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Web;
+using Microsoft.AspNetCore.StaticFiles;
 
 namespace PiHealth.Web.Controllers.API.Masters
 {
@@ -68,6 +72,7 @@ namespace PiHealth.Web.Controllers.API.Masters
             vitalsReport.CreatedDate = DateTime.Now;
             vitalsReport.CreatedBy = ActiveUser.Id;
             _vitalsReportService.Add(vitalsReport);
+            
 
             if (model.patientNewFiles?.Count > 0)
             {
@@ -76,9 +81,9 @@ namespace PiHealth.Web.Controllers.API.Masters
                 foreach (var item in model.patientNewFiles)
                 {
                     var fileByte = Convert.FromBase64String(item.base64String);
-                    string baseDir = "Reports";
-                    item.fileName = Guid.NewGuid().ToString().Substring(0, 5) + item.fileName;
-                    string fileFullName = Path.Combine(baseDir, item.fileName);
+                    string baseDir =  "Reports";
+                    item.fileName = item.fileName;
+                    string fileFullName = Path.Combine(baseDir, Guid.NewGuid().ToString().Substring(0, 5) + item.fileName);
                     PiHealthFileHelper.Save(fileByte, fileFullName);
                     appointment.PatientFiles.Add(new PatientFiles()
                     {
@@ -122,8 +127,8 @@ namespace PiHealth.Web.Controllers.API.Masters
                 {
                     var fileByte = Convert.FromBase64String(item.base64String);
                     string baseDir = "Reports";
-                    item.fileName = Guid.NewGuid().ToString().Substring(0, 5) + item.fileName;
-                    string fileFullName = Path.Combine(baseDir, item.fileName);
+                    item.fileName =  item.fileName;
+                    string fileFullName = Path.Combine(baseDir, Guid.NewGuid().ToString().Substring(0, 5) + item.fileName);
                     PiHealthFileHelper.Save(fileByte, fileFullName);
                     appointment.PatientFiles.Add(new PatientFiles()
                     {
@@ -167,6 +172,18 @@ namespace PiHealth.Web.Controllers.API.Masters
             return Ok();
         }
 
+        [HttpPost]
+        [Route("GetFile")]
+        public IActionResult GetFile([FromBody] GetFileInput input)
+        {
+            if (input == null)
+                return BadRequest();
+            var bytes = new FileStream(input.filePath, FileMode.Open, FileAccess.Read);
+            string contentType = "";
+            new FileExtensionContentTypeProvider().TryGetContentType(input.fileName, out contentType);
+            return File(bytes, contentType, input.fileName);
+           
+        }
         #endregion VitalsReport Ends
     }
 }

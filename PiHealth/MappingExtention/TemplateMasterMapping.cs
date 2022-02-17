@@ -53,13 +53,13 @@ namespace PiHealth.Web.MappingExtention
         {
             model.id = entity.Id;
             model.templateMasterId = entity.TemplateMasterId;
-            model.medicinName = entity.MedicinName;
+            model.medicineName = entity.MedicineName;
             model.strength = entity.Strength;
             model.beforeFood = entity.BeforeFood;
             model.morning = entity.Morning;
             model.noon = entity.Noon;
             model.night = entity.Night;
-            model.description = entity.Description;
+            model.remarks = entity.Remarks;
             model.noOfDays = entity.NoOfDays;
             model.isDeleted = entity.IsDeleted;
             model.createdBy = entity.CreatedBy;
@@ -72,13 +72,13 @@ namespace PiHealth.Web.MappingExtention
         public static TemplatePrescription ToEntity(this TemplatePrescriptionModel model, TemplatePrescription entity)
         {
             entity.TemplateMasterId = model.templateMasterId;
-            entity.MedicinName = model.medicinName;
+            entity.MedicineName = model.medicineName;
             entity.Strength = model.strength;
             entity.BeforeFood = model.beforeFood;
             entity.Morning = model.morning;
             entity.Noon = model.noon;
             entity.Night = model.night;
-            entity.Description = model.description;
+            entity.Remarks = model.remarks;
             entity.NoOfDays = model.noOfDays;
             entity.IsDeleted = model.isDeleted;
             entity.CreatedBy = model.createdBy;

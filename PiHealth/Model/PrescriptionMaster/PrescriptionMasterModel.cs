@@ -10,10 +10,10 @@ namespace PiHealth.Web.Model.PrescriptionMaster
         public long id { get; set; }
         public string categoryName { get; set; }
         public string genericName { get; set; }
-        public string medicinName { get; set; }
+        public string medicineName { get; set; }
         public string strength { get; set; }
         public string units { get; set; }
-        public string description { get; set; }
+        public string remarks { get; set; }
         public bool isDeleted { get; set; }
         public DateTime createdDate { get; set; }
         public DateTime? modifiedDate { get; set; }

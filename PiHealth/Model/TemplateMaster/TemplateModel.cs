@@ -38,13 +38,13 @@ namespace PiHealth.Web.Model.TemplateMaster
 
         public long id { get; set; }
         public long templateMasterId { get; set; }
-        public string medicinName { get; set; }
+        public string medicineName { get; set; }
         public string strength { get; set; }
         public bool beforeFood { get; set; }
         public bool morning { get; set; }
         public bool noon { get; set; }
         public bool night { get; set; }
-        public string description { get; set; }
+        public string remarks { get; set; }
         public int noOfDays { get; set; }
         public bool isDeleted { get; set; }
         public DateTime createdDate { get; set; }
